@@ -1,9 +1,10 @@
-package point;
+package ru.stqa.pft.sandbox;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import ru.stqa.pft.sandbox.Point;
 
-import static point.Executable.distance;
+import static ru.stqa.pft.sandbox.MyFirstProgram.distance;
 
 public class PointTests {
 
