@@ -6,10 +6,9 @@ import ru.stqa.pft.addressbook.model.ContactData;
 public class ContactModificationTests extends TestBase {
 
     @Test
-    public void testContactModification() throws InterruptedException {
+    public void testContactModification() {
         app.getContactHelper().returnToHomePage();
         app.getContactHelper().initContactModification();
-//Thread.sleep(10000);
         app.getContactHelper().fillContactForm(new ContactData("Eugene", "Pavlovich",
                 "Denisov", "JIGAN", "photo_title_eugene", "MOSTOVIK",
                 "644005 Omsk sity, Novgorodskaya 25", "443213", "89136022958",
@@ -17,10 +16,12 @@ public class ContactModificationTests extends TestBase {
                 "edenisov+3@gmail.com", "www.edenisov.com", "the second address2",
                 "home2", "some notes2"));
         app.getContactHelper().submitContactModification();
-
-
-
     }
-
-
 }
+
+// Initially the following chunk of code was used:
+
+//     public void testContactModification() throws InterruptedException {
+//        app.getContactHelper().returnToHomePage();
+//        app.getContactHelper().initContactModification();
+//Thread.sleep(10000);
