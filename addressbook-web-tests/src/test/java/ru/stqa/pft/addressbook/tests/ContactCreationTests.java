@@ -14,7 +14,7 @@ public class ContactCreationTests extends TestBase {
                 "644005 Omsk sity 3-Cheredovaya street 23", "410814",
                 "89029728081", "411400", "411400", "gitplugin@gmail.com",
                 "gitplugin+2@gmail.com", "gitplugin+3@gmail.com", "www.issart.com",
-                "the second address", "home", "some notes"));
+                "the second address", "home", "some notes", "test1"), true);
         app.getContactHelper().submitContactCreation();
         app.getContactHelper().returnToHomePage();
     }

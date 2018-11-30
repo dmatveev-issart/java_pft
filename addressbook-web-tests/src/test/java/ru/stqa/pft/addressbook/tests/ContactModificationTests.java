@@ -14,7 +14,7 @@ public class ContactModificationTests extends TestBase {
                 "644005 Omsk sity, Novgorodskaya 25", "443213", "89136022958",
                 "414141", "414141", "edenisov@gmail.com", "edenisov+2@gmail.com",
                 "edenisov+3@gmail.com", "www.edenisov.com", "the second address2",
-                "home2", "some notes2"));
+                "home2", "some notes2", null), false);
         app.getContactHelper().submitContactModification();
     }
 }
