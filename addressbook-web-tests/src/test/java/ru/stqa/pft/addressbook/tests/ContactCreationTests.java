@@ -16,6 +16,6 @@ public class ContactCreationTests extends TestBase {
                 "gitplugin+2@gmail.com", "gitplugin+3@gmail.com", "www.issart.com",
                 "the second address", "home", "some notes", "test1"), true);
         app.getContactHelper().submitContactCreation();
-        app.getContactHelper().returnToHomePage();
+        app.getNavigationHelper().gotoGroupPage();
     }
 }

@@ -6,7 +6,7 @@ public class ContactDeletionTests extends TestBase {
 
     @Test
     public void testContactDeletion() {
-        app.getContactHelper().returnToHomePage();
+        app.getNavigationHelper().gotoHomePage();
         app.getContactHelper().initContactModification();
         app.getContactHelper().submitContactDeletion();
     }
