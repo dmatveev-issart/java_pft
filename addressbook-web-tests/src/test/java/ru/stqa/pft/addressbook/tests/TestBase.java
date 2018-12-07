@@ -20,3 +20,5 @@ public class TestBase {
     }
 
 }
+
+// To reset the repo to the last commit state execute: git reset --hard HEAD
