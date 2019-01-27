@@ -16,9 +16,11 @@ public class ContactDeletionTests extends TestBase {
                     "89029728081", "411400", "411400", "gitplugin@gmail.com",
                     "gitplugin+2@gmail.com", "gitplugin+3@gmail.com", "www.issart.com",
                     "the second address", "home", "some notes", "test1"));
+
+            Thread.sleep(4000);
+
         }
 
-        Thread.sleep(4000);
         app.getContactHelper().initContactModification();
         app.getContactHelper().submitContactDeletion();
     }
